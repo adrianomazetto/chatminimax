@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
 import { Send, Bot, User, Sparkles } from 'lucide-react';
 
-const API_KEY = import.meta.env.VITE_OPENROUTER_API_KEY;
+const API_KEY = import.meta.env.VITE_OPENROUTER_API_KEY || "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";
 
 function App() {
   const [messages, setMessages] = useState([]);
